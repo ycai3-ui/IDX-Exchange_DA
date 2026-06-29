@@ -1,27 +1,11 @@
 # Week 1 - Monthly Dataset Aggregation
 # IDX Exchange Data Analyst Internship
-# Author: Sandy Cai
-# Date: 2026-06-22
 #
 # This script:
 # 1. Loads all available monthly CRMLSListing and CRMLSSold CSV files
 # 2. Concatenates them into two combined datasets
 # 3. Filters both to PropertyType == 'Residential' only
 # 4. Saves the filtered datasets as listings.csv and sold.csv
-#
-# Note: Listing files start from 202402 (202401 not available on FTP)
-# Sold files start from 202401
-#
-# Row counts:
-# Listing - before concat: 28 files
-#          after concat: 902,854 rows
-#          after Residential filter: 574,969 rows
-# Sold    - before concat: 29 files
-#          after concat: 613,842 rows
-#          after Residential filter: 412,131 rows
-
-
-
 
 import pandas as pd
 import os
